@@ -1,4 +1,4 @@
-public class SyncDemo1 {
+public class SyncThis {
   public int i;
 
   public void addI() {
