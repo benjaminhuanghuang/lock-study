@@ -1,3 +1,7 @@
+Method:
+	javac SyncMethod.java &&\
+	javap -c SyncMethod.class
+
 Object:
 	javac SyncObject.java &&\
 	javap -c SyncObject.class

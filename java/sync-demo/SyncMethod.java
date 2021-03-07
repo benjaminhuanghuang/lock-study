@@ -1,4 +1,4 @@
-public class SyncObject {
+public class SyncMethod {
   static int val = 0;
 
   public static void main(String[] args) {
@@ -17,9 +17,9 @@ public class SyncObject {
     System.out.println(val);
   }
 
-  public static void count() {
-      synchronized (new Object()) {
-          val++;
-      }
+  static synchronized void count() {
+    for (int i = 0; i < 10000; i++) {
+        val++;
+    }
   }
 }
